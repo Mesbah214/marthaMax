@@ -1,0 +1,6 @@
+node_modules/
+*.json
+dist/css/*.css
+dist/js/*.js
+app/images
+gulpfile.js
