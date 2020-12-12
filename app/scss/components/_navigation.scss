@@ -1,0 +1,146 @@
+.navigation{
+  position: relative;
+}
+
+.menu {
+  position: fixed;
+  //bottom: -$sqr-xs;
+  top: 0;
+  right: 0;
+  height: $sqr-xs;
+  width: $sqr-xs;
+  font-family: 'MKSMK3';
+  font-size: 1.1rem;
+  letter-spacing: .2rem;
+  background-color: $color-primary;
+  color: $color-white;
+  border-radius: 0;
+  text-transform: uppercase;
+  outline: none!important;
+  z-index: 2;
+  transition: background-color .2s;
+
+  &:focus {
+    outline: none!important;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+
+  @include respond(sm) {
+    height: $sqr-sm;
+    width: $sqr-sm;
+    bottom: -$sqr-sm;
+
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+  }
+
+  @include respond(md) {
+    height: $sqr-md;
+    width: $sqr-md;
+    bottom: -$sqr-md;
+
+    font-size: 1.4rem;
+    letter-spacing: .4rem;
+  }
+
+  @include respond(lg) {
+    height: $sqr-lg;
+    width: $sqr-lg;
+    bottom: -$sqr-lg;
+
+    font-size: 1.5rem;
+  }
+}
+
+.logo-box {
+  position: absolute;
+  right: $sqr-xs;
+  height: $sqr-xs;
+  width: calc(100% - 6rem);
+  padding: 0 2rem;
+  z-index: 2;
+  
+
+  @include respond(sm) {
+    right: $sqr-sm;
+    height: $sqr-sm;
+    padding: 0 3rem;
+    width: calc(100% - 8rem);
+  }
+
+  @include respond(md) {
+    right: $sqr-md;
+    height: $sqr-md;
+    padding: 0 3.5rem;
+    width: calc(100% - 10rem);
+  }
+
+  @include respond(lg) {
+    right: $sqr-lg;
+    height: $sqr-lg;
+    padding: 0 5rem;
+    width: calc(100% - 13rem);
+  }
+}
+
+.logo {
+  width: 13rem;
+
+  @include respond(md) {
+    width: 15rem;
+  }
+
+  @include respond(lg) {
+    width: 17rem;
+  }
+}
+
+.row-nav {
+  padding: 2.2rem;
+
+  @include respond(md) {
+    padding: 2.7rem;
+  }
+}
+#myNav {
+  background-color: $color-darkBlue;
+}
+
+.navbar-nav {
+
+  @include respond(md) {
+    display: flex;
+    flex-direction: row!important;
+  }
+
+  li {
+    @include respond(md) {
+      margin: 3rem;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $color-white;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      @include respond(md) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(md) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+}
