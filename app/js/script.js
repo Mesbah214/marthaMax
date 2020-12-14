@@ -124,14 +124,48 @@ window.addEventListener("load", function () {
       }
     }
 
+    /*********************
+    Dot Navigation
+    **********************/
+    var sec_nav = " ";
+
+    // Create buttons for each sections
+    for (var i = 0; i < sections.length; i++) {
+      sec_nav += '<div class="sec_button"></div>';
+    }
+
+    // Place buttons inside the element
+    document.querySelector(".sidebar__navigation").innerHTML = sec_nav;
+
+    // Select all buttons
+    var buttons = document.querySelectorAll(".sec_button");
+
+    // Add active class to first button
+    buttons[0].classList.add("active");
+
+    // addEventListener to all buttons
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", bindClick(i));
+    }
+
+    // Moves to the clicked section
+    function bindClick(i) {
+      return function () {
+        index = i;
+        scrollToSlide(index);
+        detect();
+      };
+    }
+
     // Make a function to move the window according to index number
     function scrollToSlide(num) {
       content.style.transform = "translateY(-" + num * 100 + "vh)";
 
       // Removes active class from previous section
-      // document.querySelector(".sec_button.active").classList.remove("active");
-      // Add active class to current section
-      //buttons[num].classList.add("active");
+      document.querySelector(".sec_button.active").classList.remove("active");
+
+      //Add active class to current section
+      buttons[num].classList.add("active");
     }
   }
 });
@@ -158,40 +192,6 @@ function detect() {
       dots[i].style.backgroundColor = "white";
     }
   }
-}
-*/
-/*********************
-Dot Navigation
-**********************/
-/*
-var sec_nav = " ";
-
-// Create buttons for each sections
-for (var i = 0; i < sections.length; i++) {
-  sec_nav += '<div class="sec_button"></div>';
-}
-
-// Place buttons inside the element
-document.querySelector(".sidebar__navigation").innerHTML = sec_nav;
-
-// Select all buttons
-var buttons = document.querySelectorAll(".sec_button");
-
-// Add active class to first button
-buttons[0].classList.add("active");
-
-// addEventListener to all buttons
-for (i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", bindClick(i));
-}
-
-// Moves to the clicked section
-function bindClick(i) {
-  return function () {
-    index = i;
-    scrollToSlide(index);
-    detect();
-  };
 }
 */
 

@@ -1,0 +1,46 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 6rem);
+	display: none;
+  width: $sqr-xs;
+  border-left: $thin_line-white;
+  z-index: 1;
+  //background-color: yellow;
+
+  transition: border-left .6s cubic-bezier(0.87, 0, 0.13, 1), padding-top .3s;
+
+  @include respond(md) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    width: $sqr-md;
+    height: calc(100% - 10rem);
+  }
+
+  @include respond(lg) {
+    width: $sqr-lg;
+    height: calc(100% - 13rem);
+  }
+
+  &__navigation {
+    color: $color-white;
+    text-align: center;
+  }
+}
+
+.sec_button {
+  cursor: pointer;
+  width: .5rem;
+  height: .5rem;
+  background-color: $color-white;
+  margin: 2rem;
+  border-radius: 1rem;
+
+  transition: all .6s cubic-bezier(0.87, 0, 0.13, 1);
+
+  &.active {
+    height: 4rem;
+  }
+}

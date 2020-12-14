@@ -110,6 +110,10 @@
       </div>
     </nav>
 
+    <div class="sidebar">
+      <div class="sidebar__navigation"></div>
+    </div>
+
     <div class="main__content">
       <section class="header">
         <div class="vimeo-wrapper">
@@ -157,11 +161,15 @@
       // Select the container
       var content = $(".main__content");
 
-      console.log(getHeight);
+      // Select the sidebar
+      var sideBar = $(".sidebar");
+
+      //console.log(getHeight);
 
       //Eventlistener;
       button.click(function () {
         content.toggleClass("main__content--padding");
+        sideBar.toggleClass("main__content--padding");
       });
     });
   </script>
