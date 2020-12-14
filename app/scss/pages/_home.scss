@@ -25,35 +25,38 @@ body {
 		//position:  relative;
 	}
 
-	.main__content {
-		transition: all .6s cubic-bezier(0.87, 0, 0.13, 1), padding-top .5s;
-
-		@include respond(md) {
-			/*
-			position: absolute;
-			width: 100%;
-			top: 0;
-			left: 0;
-			*/
-			touch-action: none;
-
-		}
-
-
-		&--padding {
-			padding-top: 174px;
-		}
-	}
-
 	section {
 		height: 100vh;
-
-		@include respond(md) {
-			height: 100vh;
-		}
 	}
 }
 
+.main__content {
+	transition: all .6s cubic-bezier(0.87, 0, 0.13, 1), padding-top .5s;
+
+	@include respond(md) {
+		/*
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		*/
+		touch-action: none;
+
+	}
+
+
+	&--padding {
+		padding-top: 194px;
+
+		@include respond(md) {
+			padding-top: 127.188px;
+		}
+
+		@include respond(lg) {
+			padding-top: 159.094px;
+		}
+	}
+}
 section:nth-child(2) {
   background-color: green;
 }

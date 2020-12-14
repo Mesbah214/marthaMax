@@ -17,59 +17,62 @@
     ></script>
 
     <!-- Font MKS-MK3 -->
-    <link rel="stylesheet" href="css/resources/fonts/ApexMk3/style.css" />
+    <link rel="stylesheet" href="../css/resources/fonts/ApexMk3/style.css" />
 
     <!-- Font Metronic -->
-    <link rel="stylesheet" href="css/resources/fonts/Metronic/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="../css/resources/fonts/Metronic/stylesheet.css"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <title>MarthaMax</title>
+    <title>About &nbsp;&bull;&nbsp; MarthaMax</title>
 
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
+      href="../images/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
+      href="../images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
+      href="../images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="manifest" href="../images/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="images/favicon/safari-pinned-tab.svg"
+      href="../images/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta
       name="msapplication-config"
-      content="images/favicon/browserconfig.xml"
+      content="../images/favicon/browserconfig.xml"
     />
     <meta name="theme-color" content="#333333" />
   </head>
 
-  <body class="fullscreen">
+  <body>
     <nav class="navigation fixed-top">
       <div class="collapse" id="myNav">
         <ul class="navbar-nav d-md-flex flex-md-row">
           <li class="nav-item">
-            <a href="#" class="nav-link">home</a>
+            <a href="../index.html" class="nav-link">home</a>
           </li>
 
           <li class="nav-item">
-            <a href="pages/about.html" class="nav-link">about</a>
+            <a href="#" class="nav-link">about</a>
           </li>
 
           <li class="nav-item">
@@ -93,7 +96,7 @@
       <div class="row px-0 mx-0 d-flex align-items-center logo__menuButton">
         <div class="col-6 px-0">
           <a href="#" class="navbar-brand">
-            <img src="images/Logo_Capitalize_Light.png" alt="" class="" />
+            <img src="../images/Logo_Capitalize_Light.png" alt="" class="" />
           </a>
         </div>
 
@@ -111,32 +114,15 @@
     </nav>
 
     <div class="main__content">
-      <section class="header">
-        <div class="vimeo-wrapper">
-          <iframe
-            src="https://player.vimeo.com/video/414420299?muted=1&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;"
-            frameborder="0"
-            webkitallowfullscreen=""
-            mozallowfullscreen=""
-            allowfullscreen=""
-          ></iframe>
-        </div>
+      <section
+        class="header d-flex justify-content-center align-items-center vh-100"
+      >
+        <h1 class="display-1">about</h1>
       </section>
 
-      <section>
-        <h1>Hello world -2</h1>
-        <div class="hero__text">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            veritatis provident aliquid, voluptate possimus tempore dicta beatae
-            enim eveniet similique.
-          </p>
-        </div>
-      </section>
+      <section class="bg-info vh-100"></section>
 
-      <section>
-        <h1>Hello world -3</h1>
-      </section>
+      <section></section>
     </div>
 
     <!-- Bootstrap JS -->
@@ -144,7 +130,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
   <script>
     $(document).ready(function () {
@@ -157,7 +143,7 @@
       // Select the container
       var content = $(".main__content");
 
-      console.log(getHeight);
+      //console.log(getHeight);
 
       //Eventlistener;
       button.click(function () {

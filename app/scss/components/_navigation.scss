@@ -7,7 +7,7 @@
   width: 100%;
 
   .navbar-nav {
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
 
     @include respond(md) {
       padding: 2rem 0 2rem 4rem;
