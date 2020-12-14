@@ -1,3 +1,15 @@
+html {
+	font-size: 62.5%;
+
+	@include respond(md) {
+		font-size: 67%;
+	}
+
+	@include respond(lg) {
+		font-size: 71.43%;
+	}
+}
+
 body {
 
 	@include respond(md) {
@@ -14,6 +26,7 @@ body {
 	}
 
 	.main__content {
+		transition: all .6s cubic-bezier(0.87, 0, 0.13, 1), padding-top .5s;
 
 		@include respond(md) {
 			/*
@@ -24,7 +37,11 @@ body {
 			*/
 			touch-action: none;
 
-			transition: transform .6s cubic-bezier(0.87, 0, 0.13, 1);
+		}
+
+
+		&--padding {
+			padding-top: 174px;
 		}
 	}
 
@@ -37,16 +54,19 @@ body {
 	}
 }
 
-section:nth-child(1) {
-  background-color: yellow;
-}
-
 section:nth-child(2) {
   background-color: green;
 }
 
 section:nth-child(3) {
   background-color: greenyellow;
+}
+
+.hero__text {
+
+	p {
+		font-size: 1.4rem;
+	}
 }
 
 /*

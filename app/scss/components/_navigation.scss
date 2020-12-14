@@ -1,146 +1,106 @@
-.navigation{
-  position: relative;
-}
-
-.menu {
-  position: fixed;
-  //bottom: -$sqr-xs;
-  top: 0;
-  right: 0;
-  height: $sqr-xs;
-  width: $sqr-xs;
-  font-family: 'MKSMK3';
-  font-size: 1.1rem;
-  letter-spacing: .2rem;
-  background-color: $color-primary;
-  color: $color-white;
-  border-radius: 0;
-  text-transform: uppercase;
-  outline: none!important;
-  z-index: 2;
-  transition: background-color .2s;
-
-  &:focus {
-    outline: none!important;
-    box-shadow: none;
-  }
-
-  &:hover {
-    background-color: $color-secondary;
-  }
-
-  @include respond(sm) {
-    height: $sqr-sm;
-    width: $sqr-sm;
-    bottom: -$sqr-sm;
-
-    font-size: 1.3rem;
-    letter-spacing: .3rem;
-  }
-
-  @include respond(md) {
-    height: $sqr-md;
-    width: $sqr-md;
-    bottom: -$sqr-md;
-
-    font-size: 1.4rem;
-    letter-spacing: .4rem;
-  }
-
-  @include respond(lg) {
-    height: $sqr-lg;
-    width: $sqr-lg;
-    bottom: -$sqr-lg;
-
-    font-size: 1.5rem;
-  }
-}
-
-.logo-box {
-  position: absolute;
-  right: $sqr-xs;
-  height: $sqr-xs;
-  width: calc(100% - 6rem);
-  padding: 0 2rem;
-  z-index: 2;
-  
-
-  @include respond(sm) {
-    right: $sqr-sm;
-    height: $sqr-sm;
-    padding: 0 3rem;
-    width: calc(100% - 8rem);
-  }
-
-  @include respond(md) {
-    right: $sqr-md;
-    height: $sqr-md;
-    padding: 0 3.5rem;
-    width: calc(100% - 10rem);
-  }
-
-  @include respond(lg) {
-    right: $sqr-lg;
-    height: $sqr-lg;
-    padding: 0 5rem;
-    width: calc(100% - 13rem);
-  }
-}
-
-.logo {
-  width: 13rem;
-
-  @include respond(md) {
-    width: 15rem;
-  }
-
-  @include respond(lg) {
-    width: 17rem;
-  }
-}
-
-.row-nav {
-  padding: 2.2rem;
-
-  @include respond(md) {
-    padding: 2.7rem;
-  }
-}
 #myNav {
   background-color: $color-darkBlue;
+	transition: all .5s!important;
 }
 
-.navbar-nav {
+.navigation {
+  width: 100%;
 
-  @include respond(md) {
-    display: flex;
-    flex-direction: row!important;
-  }
+  .navbar-nav {
+    padding: .5rem 2rem;
 
-  li {
     @include respond(md) {
-      margin: 3rem;
+      padding: 2rem 0 2rem 4rem;
+    }
+  }
+
+  .nav-item {
+    font-family: "MKSMK3";
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    color: $color-white;
+    letter-spacing: .1rem;
+
+    @include respond(md) {
+      padding: 3rem 2rem;
     }
 
-    a {
-      text-transform: uppercase;
-      color: $color-white;
+    @include respond(lg) {
+      padding: 4rem 3rem;
+    }
 
-      &:hover {
-        color: $color-primary;
-      }
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  .logo__menuButton {
+    background-color: rgba(0, 0, 0, .5);
+
+    @include respond(md) {
+      //background-color: transparent;
+    }
+
+    .navbar-brand {
+      padding-left: 2rem;
 
       @include respond(md) {
-        font-size: 1.5rem;
+        padding-left: 5rem;
       }
 
-      @include respond(md) {
-        font-size: 1.6rem;
+      @include respond(lg) {
+        padding-left: 6rem;
+      }
+
+      img {
+        width: 14rem;
+
+        @include respond(md) {
+          width: 17rem;
+        }
+
+        @include respond(lg) {
+          width: 19rem;
+        }
       }
     }
   }
-}
 
-button {
-  border: none;
+  button {
+    font-family: 'MKSMK3';
+    font-size: 1.2rem;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: $color-white;
+    height: $sqr-xs;
+    width: $sqr-xs;
+    box-shadow: none!important;
+    background-color: $color-primary;
+    border-radius: 0;
+
+    transition: background-color .2s;
+
+    @include respond(md) {
+      height: $sqr-md;
+      width: $sqr-md;
+      font-size: 1.4rem;
+    }
+
+    @include respond(lg) {
+      height: $sqr-lg;
+      width: $sqr-lg;
+      font-size: 1.5rem;
+    }
+
+    &:focus {
+      outline: none!important;
+      border: none;
+    }
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
 }

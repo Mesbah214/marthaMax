@@ -213,3 +213,11 @@ navBtn.addEventListener("click", function () {
   }
 });
 */
+
+// var nav = document.querySelector(".navigation").clientHeight;
+// var id = document.getElementById("myNav");
+// var navButton = document.querySelector(".navbar-toggler");
+
+// document.addEventListener("click", function () {
+//   // something
+// });
