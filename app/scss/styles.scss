@@ -3,9 +3,12 @@
 @import "abstract/typography";
 
 @import "layout/header";
+@import "layout/sectionIntro";
+
 @import "pages/home";
 
 @import "components/navigation";
 @import "components/vimeo-wrapper";
 @import "components/sidebar";
 @import "components/sectionContainer";
+@import "components/play_button";

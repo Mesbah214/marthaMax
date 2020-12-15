@@ -1,0 +1,62 @@
+.sectionIntro {
+  background-image: url(resources/img/sec2-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      width: 30rem;
+      padding: 0;
+
+      @include respond(md) {
+        display: inline-block;
+        width: 25rem;
+      }
+
+      @include respond(lg) {
+        display: inline-block;
+        width: 30rem;
+      }
+    }
+  }
+}
+
+.bottom_row {
+  position: absolute;
+  width: 100%;
+  right: .8rem;
+  bottom: -1px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(md) {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .thin__line {
+
+    @include respond(md) {
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        height: 1px;
+        width: 100vw;
+      }
+    }
+  }
+}

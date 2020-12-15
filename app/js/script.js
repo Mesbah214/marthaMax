@@ -153,7 +153,7 @@ window.addEventListener("load", function () {
       return function () {
         index = i;
         scrollToSlide(index);
-        detect();
+        //detect();
       };
     }
 

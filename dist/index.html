@@ -143,17 +143,93 @@
       </section>
       <!-- end of Header -->
 
-      <section>
-        <h1>Hello world -2</h1>
+      <!-- Intro Section -->
+      <section class="sectionIntro">
+        <div class="sectionContainer sectionContainer-white-line">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 sectionIntro__left">
+                <h2 class="">
+                  Business <br />
+                  Re<span id="sign">-</span>genesis
+                </h2>
+                <p>
+                  We help businesses renew and transform profitably, sustainably
+                  and with social purpose.
+                </p>
+              </div>
+
+              <div class="col-sm-12 col-md-6 sectionIntro__right">
+                <video autoplay muted loop>
+                  <source src="./images/1858464408.mp4" />
+                  Your browser is not supported
+                </video>
+
+                <div
+                  class="play-btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  <i>
+                    <ion-icon name="play"></ion-icon>
+                  </i>
+                </div>
+
+                <p>
+                  Company Video&nbsp;&nbsp;<span>&nbsp;&nbsp;0:50 MIN</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row bg-light bottom_row">
+              <div class="col-12 position-md-relative thin__line">
+                <div class="row justify-content-space text-center">
+                  <div class="col-4">
+                    <h4>Since 1990</h4>
+                    <p>Proudly Canadian</p>
+                  </div>
+
+                  <div class="col-4">
+                    <h4>Trusted</h4>
+                    <p>Connected & trade Ready</p>
+                  </div>
+
+                  <div class="col-4">
+                    <h4>Global Reach</h4>
+                    <p>Office Across 7 Time Zones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- end of Intro Section -->
 
       <section>
         <h1>Hello world -3</h1>
       </section>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" onClick="stopVideo()">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video class="modal-video" width="100%" controls>
+              <source src="./images/1858464408.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom JS -->
@@ -181,5 +257,31 @@
         sideBar.toggleClass("main__content--padding");
       });
     });
+
+    //TEXT CHANGING ANIMATION>
+    var text = [" + ", "-"];
+    var counter = 0;
+
+    var elem = $("#sign");
+    setInterval(change, 2000);
+
+    function change() {
+      elem.fadeOut(function () {
+        elem.html(text[counter]);
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+        }
+        elem.fadeIn();
+      });
+    }
+
+    //STOPS THE VIDEO FROM PLAYING IN BACKGROUND
+    function stopVideo() {
+      var video = document.querySelector(".modal-video");
+
+      video.pause();
+      video.currentTime = 0;
+    }
   </script>
 </html>

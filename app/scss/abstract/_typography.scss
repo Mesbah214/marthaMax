@@ -53,3 +53,91 @@ body {
 
   }
 }
+
+//SectionIntro
+.sectionIntro {
+
+  &__left {
+    color: $color-white;
+    padding: 3rem;
+
+    @include respond(md) {
+      padding: 5rem;
+    }
+
+    h2 {
+      font-family: 'Metronic Pro';
+      font-weight: 700;
+      font-size: 3rem;
+
+      @include respond(md) {
+        font-size: 3rem;
+      }
+
+      @include respond(lg) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      padding-top: 2rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__right {
+
+    p {
+      position:  absolute;
+      left: 12rem;
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 0!important;
+
+      span {
+        opacity: .4;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: -5px;
+          background-color: #fff;
+          opacity: .4;
+          height: 3rem;
+          width: 2px
+        }
+      }
+
+      @include respond(md) {
+        top: 14.8rem;
+        left: calc(100% / 2 * 2 + -23rem);;
+      }
+
+      @include respond(lg) {
+        top: 19.8rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.bottom_row {
+
+  h4 {
+    font-family: 'Metronic Pro';
+    font-size: 2rem;
+    font-weight: 600;
+
+    @include respond(md) {
+      //font-size: 2.2rem;
+    }
+  }
+
+  P {
+    font-size: 1.3rem;
+
+    @include respond(md) {
+      //font-size: 1.6rem;
+    }
+  }
+}

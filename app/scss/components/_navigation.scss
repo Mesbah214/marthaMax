@@ -32,10 +32,10 @@
   }
 
   .logo__menuButton {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .9);
 
     @include respond(md) {
-      //background-color: transparent;
+      background-color: transparent;
     }
 
     .navbar-brand {

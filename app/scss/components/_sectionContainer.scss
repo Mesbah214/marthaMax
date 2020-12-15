@@ -2,21 +2,21 @@
 	position: absolute;
   top: $sqr-xs-top;
 	right: 0;
-  height: calc(100% - 5.9rem);
+  height: calc(100% - 6rem);
   width: 100%;
   //background-color: orangered;
 
 	@include respond(md) {
 		top: $sqr-md-top;
 		right: $sqr-md;
-		height: calc(100% - 9.9rem);
+		height: calc(100% - 10rem);
 		width: calc(100% - 10rem);
 	}
 
 	@include respond(lg) {
-		top: $sqr-lg-top;
-		right: $sqr-lg;
-		height: calc(100% - 12.9rem);
+		top: 148px;
+		right: 149px;
+		height: calc(100% - 13rem);
 		width: calc(100% - 13rem);
 	}
 

@@ -1,0 +1,58 @@
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary;
+  margin-left: 2rem;
+  width: 7rem;
+  height: 4rem;
+  cursor: pointer;
+
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+
+  i {
+    font-size: 1.8rem;
+    color: $color-white;
+
+    @include respond(lg) {
+      font-size: 3rem;
+    }
+  }
+
+  @include respond(md) {
+    position: absolute;
+    top: 151px;
+    right: 268px;
+  }
+
+  @include respond(lg) {
+    top: 16.9rem;
+    right: 30rem;
+    text-align: center;
+    width: 11rem;
+    height: 6rem;
+
+    margin-left: 0;
+  }
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-body {
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+video:focus {
+  outline: none!important;
+}
+
