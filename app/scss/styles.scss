@@ -1,6 +1,6 @@
-@import "abstract/typography";
-@import "abstract/mixin";
 @import "abstract/variables";
+@import "abstract/mixin";
+@import "abstract/typography";
 
 @import "layout/header";
 @import "pages/home";
@@ -8,4 +8,4 @@
 @import "components/navigation";
 @import "components/vimeo-wrapper";
 @import "components/sidebar";
-
+@import "components/sectionContainer";

@@ -14,11 +14,6 @@
     }
   }
 
-  .nav-item {
-    font-family: "MKSMK3";
-    font-size: 1.3rem;
-  }
-
   .nav-link {
     color: $color-white;
     letter-spacing: .1rem;
@@ -69,10 +64,6 @@
   }
 
   button {
-    font-family: 'MKSMK3';
-    font-size: 1.2rem;
-    letter-spacing: .25rem;
-    text-transform: uppercase;
     color: $color-white;
     height: $sqr-xs;
     width: $sqr-xs;

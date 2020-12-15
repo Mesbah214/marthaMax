@@ -1,3 +1,55 @@
-h1 {
-   font-family: sans-serif;
+// Imported Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.navigation {
+
+  .nav-item {
+    font-family: "MKSMK3";
+    font-size: 1.3rem;
+  }
+
+  button {
+   font-family: 'MKSMK3';
+   font-size: 1.2rem;
+   letter-spacing: .25rem;
+   text-transform: uppercase;
+  }
+}
+
+//Header
+.hero__text {
+  font-family: "Metronic Pro";
+  color: $color-white;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    @include respond(lg) {
+      font-size: 3.6rem;
+    }
+
+    span {
+      font-size: 4rem;
+
+      @include respond(lg) {
+        font-size: 4.7rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+
+    @include respond(lg){
+      font-size: 1.7rem;
+    }
+
+  }
 }
