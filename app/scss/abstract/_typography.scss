@@ -372,3 +372,113 @@ body {
     }
   }
 }
+
+// secFooter
+.footer {
+
+  &__textCarousel__control {
+
+    .arrow {
+
+      ion-icon {
+
+        @include respond(lg) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    span {
+      font-family: "Metronic Pro";
+      font-weight: 600;
+      color: #808080;
+      font-size: 1.3rem;
+
+      @include respond(lg) {
+        font-size: 1.4rem;
+      }
+
+      &.active {
+        color: #000;
+      }
+    }
+  }
+
+  &__textItem {
+
+    h3 {
+      font-family: "Metronic Pro";
+      font-size: 2rem;
+      font-weight: 600;
+
+      @include respond(md) {
+        font-size: 2.6rem;
+      }
+    }
+
+    p {
+      font-family: "Metronic Pro";
+
+      @include respond(md) {
+        padding: .5rem;
+      }
+    }
+
+    .address {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.3rem;
+    }
+  }
+
+  .socialLinks {
+
+    a {
+      font-family: "Metronic Pro";
+      font-weight: 500;
+      font-size: 1.3rem;
+      margin-top: 3px;
+      text-decoration: none;
+      color: $color-white;
+      transition: color .2s ease-in;
+      padding: 2rem 0;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    .instagram {
+      border-left: $thin_line-white;
+    }
+  }
+
+  &__copyright {
+    border-top: $thin_line-white;
+    font-size: 1.4rem;
+  }
+
+  &__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color-white;
+
+        transition: color .2s ease-in;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
