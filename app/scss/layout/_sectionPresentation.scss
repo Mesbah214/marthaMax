@@ -1,0 +1,143 @@
+.sectionPresentation {
+
+  &__carousel {
+    width: 100%;
+    height: 100%;
+
+    &__container {
+      height: 100%;
+      overflow-x: hidden;
+
+      &__slider {
+        height: 100%;
+        display: flex;
+        width: 400%;
+
+        transition: transform .6s cubic-bezier(0.87, 0, 0.13, 1);
+
+        .sliderItem {
+          height: 100%;
+          background-color: #000;
+
+          img {
+            height: 100%;
+            opacity: .7;
+            object-fit: cover;
+            width: 100vw;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    height: 100%;
+
+    .row {
+
+      @include respond(md) {
+        height: 100%;
+      }
+
+      .colLeft {
+        padding: 3rem;
+
+        @include respond(md) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 7rem;
+          border-top: $thin_line-white;
+        }
+      }
+
+      .colRight {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+.sectionPresentation__textCarousel {
+  border-top: $thin_line-white;
+  width: 100%;
+
+  @include respond(md) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: calc(100vh * 1);
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top: $thin_line-white;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    &__slider {
+      width: 400%;
+      display: flex;
+
+      transition: transform .6s cubic-bezier(0.87, 0, 0.13, 1);
+
+    }
+  }
+
+  &__controls {
+    width: 100%;
+
+    .arrow {
+      padding: .8rem 0;
+      text-align: center;
+      border-right: $thin_line-white;
+      cursor: pointer;
+    }
+  }
+}
+
+.sliderText {
+  width: 100%;
+  padding: 3rem;
+
+  @include respond(lg) {
+    padding: 4rem;
+  }
+}
+
+.sectionPresentation__dots {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    background-color: $color-white;
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: all .6s cubic-bezier(0.87, 0, 0.13, 1);
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &.active {
+      width: 3.5rem;
+    }
+  }
+}

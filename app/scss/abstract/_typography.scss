@@ -239,3 +239,55 @@ body {
     font-size: 7rem;
   }
 }
+
+// sectionPresentation
+.secondary-heading {
+  font-family: 'Metronic Pro'; 
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: $color-white;
+
+  @include respond(md) {
+    margin-top: 0!important;
+    font-size: 3.2rem;
+  }
+
+  @include respond(lg) {
+    font-size: 4rem;
+  }
+
+  &-para {
+    font-size: 1.5rem;
+    color: $color-white;
+  }
+}
+
+.tertiary-heading {
+  font-family: "Metronic Pro";
+  font-size: 2rem;
+  font-weight: 600;
+
+  @include respond(md) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(lg) {
+    font-size: 2.8rem;
+  }
+
+  &-para {
+    font-size: 1.4rem;
+  }
+}
+
+.sectionPresentation__textCarousel__controls {
+
+  i {
+    color: $color-white;
+
+    @include respond(lg) {
+      font-size: 2.5rem;
+    }
+  }
+}
