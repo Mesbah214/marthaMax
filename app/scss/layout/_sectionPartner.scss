@@ -1,0 +1,132 @@
+.sectionPartner {
+
+  .sec6-bg {
+    height: 100vh;
+    background-image: url(resources/img/sec6-bg.jpg);
+    background-position: center left;
+    background-size: cover;
+    opacity: .15;
+
+    @include respond(md) {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  &__carousel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+
+    border-top: $thin_line-black;
+
+    @include respond(md) {
+      width: 58%;
+    }
+
+    &__textCarousel {
+      border-right: $thin_line-black;
+      &__container {
+        width: 100%;
+        overflow: hidden;
+
+        &__slider {
+          display: flex;
+          width: 300%;
+
+          transition: transform .6s cubic-bezier(0.87, 0, 0.13, 1);
+        }
+      }
+    }
+  }
+
+  &__sliderText {
+    width: 100%;
+    padding: 1rem;
+
+    @include respond(md) {
+      padding: 2rem 1rem;
+    }
+
+    @include respond(lg) {
+      padding: 2rem;
+    }
+  }
+
+  &__imgCarousel {
+
+    &__control {
+
+      .arrows {
+        border-bottom: $thin_line-black;
+
+        .arrow {
+          padding: .2rem 0;
+          cursor: pointer;
+
+          @include respond(sm) {
+            padding: 3px 0;
+          }
+
+          @include respond(md) {
+            padding: 5px 0;
+          }
+
+          @include respond(lg) {
+            padding: 15px 0;
+          }
+
+          &.Left {
+            border-right: $thin_line-black;
+          }
+        }
+      }
+    }
+
+    &__container {
+      height: 100%;
+      overflow: hidden;
+
+      &__slider {
+        display: flex;
+        width: 300%;
+
+        transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+      }
+    }
+  }
+
+  &__dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1.2rem 0;
+    border-bottom: $thin_line-black;
+
+    @include respond(lg) {
+      padding: 2.5rem 0;
+      border-left: $thin_line-black;
+    }
+
+    li {
+      height: .5rem;
+      width: .5rem;
+      background-color: #000;
+      border-radius: 50px;
+      cursor: pointer;
+
+      transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &.active {
+        width: 3.5rem;
+      }
+    }
+  }
+}
