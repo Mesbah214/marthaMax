@@ -198,7 +198,6 @@ Navigation menu button
 **********************/
 
 // Select the class
-/*
 var navBtn = document.querySelector(".navbar-toggler");
 
 navBtn.addEventListener("click", function () {
@@ -210,12 +209,3 @@ navBtn.addEventListener("click", function () {
     this.textContent = "menu";
   }
 });
-*/
-
-// var nav = document.querySelector(".navigation").clientHeight;
-// var id = document.getElementById("myNav");
-// var navButton = document.querySelector(".navbar-toggler");
-
-// document.addEventListener("click", function () {
-//   // something
-// });
