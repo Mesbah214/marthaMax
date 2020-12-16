@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
 
       keyOrWheel(e);
       scrollToSlide(index);
-      //detect();
+      detect();
 
       // Record current time as lastTime to use next time
       lastTime = currentTime;
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
 
         keyOrWheel(e);
         scrollToSlide(index);
-        //detect();
+        detect();
 
         lastTime = currentTime;
       },
@@ -107,7 +107,7 @@ window.addEventListener("load", function () {
       }
       touch(diff);
       scrollToSlide(index);
-      //detect();
+      detect();
       lastTime = currentTime;
     }
 
@@ -153,7 +153,7 @@ window.addEventListener("load", function () {
       return function () {
         index = i;
         scrollToSlide(index);
-        //detect();
+        detect();
       };
     }
 
@@ -167,33 +167,31 @@ window.addEventListener("load", function () {
       //Add active class to current section
       buttons[num].classList.add("active");
     }
+
+    // detects a section and changes style
+    function detect() {
+      var bar = document.querySelector(".sidebar");
+      var dots = document.querySelectorAll(".sec_button");
+
+      if (
+        content.style.transform === "translateY(-200vh)" ||
+        content.style.transform === "translateY(-500vh)"
+      ) {
+        bar.style.borderLeftColor = "rgba(0, 0, 0, 0.1)";
+
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].style.backgroundColor = "black";
+        }
+      } else {
+        bar.style.borderLeftColor = "rgba(255, 255, 255, 0.1)";
+
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].style.backgroundColor = "white";
+        }
+      }
+    }
   }
 });
-
-// detects a section and changes style
-/*
-function detect() {
-  var bar = document.querySelector(".sidebar");
-  var dots = document.querySelectorAll(".sec_button");
-
-  if (
-    content.style.transform === "translateY(-200%)" ||
-    content.style.transform === "translateY(-500%)"
-  ) {
-    bar.style.borderLeftColor = "rgba(0, 0, 0, 0.1)";
-
-    for (var i = 0; i < dots.length; i++) {
-      dots[i].style.backgroundColor = "black";
-    }
-  } else {
-    bar.style.borderLeftColor = "rgba(255, 255, 255, 0.1)";
-
-    for (var i = 0; i < dots.length; i++) {
-      dots[i].style.backgroundColor = "white";
-    }
-  }
-}
-*/
 
 /*********************
 Navigation menu button

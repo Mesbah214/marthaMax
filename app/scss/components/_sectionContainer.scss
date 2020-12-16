@@ -2,22 +2,22 @@
 	position: absolute;
   top: $sqr-xs-top;
 	right: 0;
-  height: calc(100% - 6rem);
+  height: calc(100% - 59px);
   width: 100%;
   //background-color: orangered;
 
 	@include respond(md) {
 		top: $sqr-md-top;
 		right: $sqr-md;
-		height: calc(100% - 10rem);
-		width: calc(100% - 10rem);
+		height: calc(100% - 106px);
+		width: calc(100% - 107px);
 	}
 
 	@include respond(lg) {
 		top: 148px;
 		right: 149px;
-		height: calc(100% - 13rem);
-		width: calc(100% - 13rem);
+		height: calc(100% - 148px);
+		width: calc(100% - 149px);
 	}
 
 	&-white-line {

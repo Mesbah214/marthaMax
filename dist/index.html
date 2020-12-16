@@ -208,8 +208,66 @@
       </section>
       <!-- end of Intro Section -->
 
+      <!-- sectionCeo -->
+      <section class="sectionCeo">
+        <div class="sectionContainer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-5">
+                <div class="sectionCeo__img text-center text-md-left">
+                  <picture>
+                    <source
+                      srcset="./images/gabrielCEO-01231-26.png"
+                      media="(min-width: 48em)"
+                    />
+
+                    <img srcset="./images/gabrielCEO-01.png" alt="ceo_image" />
+                  </picture>
+                </div>
+              </div>
+
+              <div
+                class="col-sm-12 col-md-7 text-center p-0 text-md-left pl-lg-5"
+              >
+                <p class="sectionCeo__word-rotator">
+                  Are you ready to make your
+                  <span id="container" data-delimiter="|" data-delay="1200"
+                    >brand</span
+                  >
+                  <span id="big_text">sustainable?</span>
+                </p>
+
+                <p class="sectionCeo__intro">
+                  Dr. Gabriel Huston
+                  <span class="degs"
+                    >PhD, CITP, CMILT, FIBP&nbsp;&nbsp;&nbsp;</span
+                  ><span class="designation">&nbsp;&nbsp;&nbsp;CEO</span>
+                </p>
+
+                <div class="row text-center text-md-left sectionCeo__tags">
+                  <div class="col-6">100% <br />Assurance</div>
+                  <div class="col-6">90-day <br />Turnaround</div>
+                </div>
+
+                <p class="sectionCeo__foot">
+                  <span>smart</span>&nbsp;growth across 17 key performance
+                  criteria
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of sectionCeo -->
+
+      <!-- sectionPresentation -->
+      <section class="sectionPresentation">
+        <h1>Hello world -5</h1>
+      </section>
+      <!-- end of sectionPresentation -->
+
       <section>
-        <h1>Hello world -3</h1>
+        <h1>Hello world -5</h1>
       </section>
     </div>
 
@@ -283,5 +341,21 @@
       video.pause();
       video.currentTime = 0;
     }
+
+    //Word rotator
+    $("#container").dynamo({
+      speed: 200,
+      delay: 2000,
+      lines: [
+        "business",
+        "growth",
+        "reinvention",
+        "startup",
+        "strategy",
+        "supply chain",
+        "transformation",
+        "vision",
+      ],
+    });
   </script>
 </html>
