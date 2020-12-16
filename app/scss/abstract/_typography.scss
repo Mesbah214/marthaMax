@@ -258,7 +258,7 @@ body {
   }
 
   &-para {
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
     color: $color-white;
   }
 }
@@ -273,7 +273,7 @@ body {
   }
 
   @include respond(lg) {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   &-para {
@@ -291,3 +291,28 @@ body {
     }
   }
 }
+
+// sectionAlliance
+.sectionAlliance__branding-row {
+
+  h3 {
+    font-family: "Metronic Pro";
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $color-white;
+
+    @include respond(md) {
+      font-size: 2rem;
+    }
+
+    @include respond(lg) {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: $color-white;
+  }
+}
+

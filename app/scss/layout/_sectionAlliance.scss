@@ -1,0 +1,75 @@
+.sectionAlliance {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), 
+  url(resources/img/sec5-bg.jpg);
+  background-position: top center;
+  background-size: cover;
+
+  &__hero__col {
+    padding-left: 2rem;
+
+    @include respond(md) {
+      padding: 3rem;
+    }
+    @include respond(lg) {
+      padding: 4rem;
+    }
+  }
+
+  &__branding-row {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-top: $thin_line-white;
+
+    .col-6 {
+      padding: 2rem;
+      min-height: 9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond(sm) {
+        display: block;
+        min-height: 11.4rem;
+      }
+    }
+
+    .col1,
+    .col3{
+      border-right: $thin_line-white;
+    }
+
+    .col3 {
+      @include respond(md) {
+        border-right: none;
+      }
+    }
+
+    .col3,
+    .col4{
+      border-top: $thin_line-white;
+    }
+
+    img {
+      max-width: 10.3rem;
+
+      @include respond(sm) {
+        max-width: 13rem;
+      }
+
+      @include respond(lg) {
+        max-width: 15rem;
+      }
+    }
+
+    p {
+      display: none;
+
+      @include respond(sm) {
+        display: block;
+      }
+
+    }
+  }
+}
