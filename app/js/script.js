@@ -7,10 +7,7 @@ window.onbeforeunload = function () {
 Slide Navigation
 **********************/
 window.addEventListener("load", function () {
-  if (
-    document.body.classList.contains("fullscreen") &&
-    window.innerWidth > 767
-  ) {
+  if (window.innerWidth > 767) {
     // Make array of sections
     var sections = document.querySelectorAll("section");
 
