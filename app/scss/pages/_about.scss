@@ -1,0 +1,32 @@
+.generalHeader {
+	padding: 3rem 0;
+	margin-top: 6rem;
+
+	@include respond(md) {
+		margin-top: 10rem;
+		padding: 5rem 0;
+	}
+
+	@include respond(lg) {
+		margin-top: 13rem;
+	}
+
+	@include respond(xl) {
+		padding: 8rem 0;
+	}
+}
+
+.mainContents {
+
+	&__stickySidebar {
+		position: sticky;
+
+		@include respond(md) {
+			top: 64.3125px;
+		}
+
+		@include respond(lg) {
+			top: 91.4219px;
+		}
+	}
+}

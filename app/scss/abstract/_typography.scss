@@ -482,3 +482,37 @@ body {
   }
 }
 
+// About page
+// Header section
+.general {
+  font-family: "Metronic Pro";
+
+  &--Header {
+    font-weight: 700;
+
+    @include respond(xl){
+      font-size: 7rem;
+    }
+  }
+
+  &--Para {
+    h4 {
+     font-size: 2.2rem; 
+     font-weight: 600;
+    }
+
+    p {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.companyInfo {
+  p {
+    line-height: 176%;
+
+    @include respond(lg) {
+     font-size: 1.6rem;
+    }
+  }
+}

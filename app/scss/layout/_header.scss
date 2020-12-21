@@ -1,4 +1,7 @@
 .header {
   position: relative;
-  background-color: rgba(0, 0, 0, .6);
+
+  &--index {
+	background-color: rgba(0, 0, 0, .6);
+  }
 }

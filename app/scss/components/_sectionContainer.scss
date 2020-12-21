@@ -1,9 +1,9 @@
 .sectionContainer {
 	position: absolute;
-  top: $sqr-xs-top;
+  	top: $sqr-xs-top;
 	right: 0;
-  height: calc(100% - 59px);
-  width: 100%;
+  	height: calc(100% - 59px);
+  	width: 100%;
   //background-color: orangered;
 
 	@include respond(md) {
@@ -24,6 +24,11 @@
 		@include respond(md) {
 			border-top: $thin_line-white;
 		}
+	}
+
+	&--otherPages {
+		position: static;
+		height: auto;
 	}
 
 	// &-black-line {
