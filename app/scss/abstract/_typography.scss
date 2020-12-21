@@ -488,10 +488,10 @@ body {
   font-family: "Metronic Pro";
 
   &--Header {
-    font-weight: 700;
+    font-weight: 600;
 
     @include respond(xl){
-      font-size: 7rem;
+      font-size: 6rem;
     }
   }
 
