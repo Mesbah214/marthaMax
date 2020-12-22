@@ -30,3 +30,20 @@
 		}
 	}
 }
+
+.videoPresentation {
+	background-image: url(resources/img/sec2-bg.jpg);
+	background-position: center left;
+	background-size: cover;
+
+	@include respond(lg) {
+		height: 100vh;
+	}
+
+	video {
+
+		@include respond(lg) {
+			width: 60%!important;
+		}
+	}
+}
