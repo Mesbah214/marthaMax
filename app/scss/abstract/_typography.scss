@@ -509,10 +509,45 @@ body {
 
 .companyInfo {
   p {
-    line-height: 176%;
+    line-height: 1.8;
 
     @include respond(lg) {
      font-size: 1.6rem;
+    }
+  }
+}
+
+// Maincontents section
+.mainContents__contents {
+
+  @include respond(md) {
+    border-left: 2px solid red;
+  }
+
+  h3 {
+    font-family: "Metronic Pro";
+    font-weight: 600;
+    font-size: 3rem; 
+
+    @include respond(lg) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}
+
+.topManagement {
+  flex-basis: 100%;
+
+  &__ids {
+
+    h4 {
+      font-family: "Metronic Pro";
+      font-size: 2rem;
+      font-weight: 600;
     }
   }
 }

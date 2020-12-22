@@ -22,11 +22,11 @@
 		position: sticky;
 
 		@include respond(md) {
-			top: 64.3125px;
+			top: 53.5938px;
 		}
 
 		@include respond(lg) {
-			top: 91.4219px;
+			top: 80px;
 		}
 	}
 }
@@ -44,6 +44,43 @@
 
 		@include respond(lg) {
 			width: 60%!important;
+		}
+	}
+}
+
+.mainContents {
+	@include respond(lg) {
+		//padding-top: 3rem;
+	}
+
+	&__stickySidebar {
+
+		ul {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+			list-style: none;
+
+			li {
+
+				a {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__contents {
+		padding-top: 3rem;
+
+		@include respond(md) {
+			padding-top: 5rem;
+			padding-right: 2rem;
+		}
+
+		@include respond(lg) {
+			padding-right: 3rem!important;
+			padding-left: 5rem!important;
 		}
 	}
 }
