@@ -551,3 +551,21 @@ body {
     }
   }
 }
+
+// generalFooter
+.generalFooter {
+
+  h4 {
+    font-family: "Metronic Pro";
+    font-size: 1.4rem;
+  }
+  
+  .contacts {
+
+    .btn {
+      font-family: "Metronic Pro";
+      font-size: 1.6rem;
+      color: $color-white;
+    }
+  }
+}

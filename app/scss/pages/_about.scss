@@ -84,3 +84,77 @@
 		}
 	}
 }
+
+//General Footer
+.generalFooter {
+	background-color: $color-footer;
+	position: relative;
+
+	.credit {
+		@include respond(md) {
+			border-top: $thin-line-white;
+		}
+	}
+
+	img {
+		max-width: 17rem;
+		height: auto;
+	}
+
+	.links {
+		@include respond(md) {
+			border-left: $thin-line-white;
+		}
+
+		a {
+			text-decoration: none;
+			transition: color .2s ease-out;
+
+			&:hover {
+				color: $color-primary!important;
+			}
+		}
+	}
+
+	.contacts {
+
+		h4 {
+
+			span {
+				border-left: $thin-line-white;
+				padding: .5rem 1rem;
+				margin-left: 1rem;
+			}
+		}
+
+		.btn {
+			width: 100%;
+			padding: 4rem 0;
+			background-color: $color-primary;
+
+			transition: background-color .2s ease-out;
+
+			&:hover {
+				background-color: $color-secondary;
+				color: $color-white!important;
+			}
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.footer-row {
+	border-top: $thin-line-white;
+
+	a {
+		transition: color .2s ease-out;
+
+		&:hover {
+			color: $color-primary!important;
+		}
+	}
+}
