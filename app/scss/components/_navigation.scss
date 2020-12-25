@@ -63,6 +63,7 @@
         }
 
         &.scroll {
+
           @include respond(md) {
             width: 14rem;
           }
@@ -122,6 +123,18 @@
 
       @include respond(lg) {
         height: 7rem;
+      }
+    }
+  }
+}
+
+nav{
+  ul {
+    li {
+      a {
+        &.active {
+          color: $color-primary!important;
+        }
       }
     }
   }

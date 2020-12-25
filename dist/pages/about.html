@@ -72,7 +72,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">about</a>
+            <a href="about.html" class="nav-link active">about</a>
           </li>
 
           <li class="nav-item">
@@ -120,14 +120,14 @@
     </nav>
 
     <div class="main__content">
-      <div class="bg-danger">
+      <div class="">
         
         <!-- Header Section -->
         <section
-          class="generalHeader col-12 col-md-11 pr-md-5 mr-lg-5 d-flex align-items-center bg-warning"
+          class="generalHeader col-12 col-md-11 pr-md-5 mr-lg-5 d-flex align-items-center"
         >
           <div class="row mx-0">
-            <div class="col-12 col-lg-6 bg-info d-lg-flex flex-column justify-content-between">
+            <div class="col-12 col-lg-6 d-lg-flex flex-column justify-content-between">
               <h1 class="display-2 general general--Header my-4 text-center">About The Company</h1>
 
               <div class="row mx-0 text-center py-4">
@@ -143,15 +143,15 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-6 bg-secondary p-3 pr-lg-5 companyInfo">
-              <p class="pl-lg-2">From sourcing the world’s finest estate-grown Mandeheling coffees in the remote, mist-shrouded volcanic highlands of North Sumatra, and in doing so ensuring that farmers are treated and paid fairly, to helping a three-generation Indian premium cashew processing enterprise grow to the next level while investing to build strong local communities, MarthaMax Corporation is committed to people and planet first through social enterprise trust. Through legacy-building we find great fulfillment and do it well by creating added value in all that we do.</p>
+            <div class="col-12 col-lg-6 p-3 pr-lg-5 companyInfo">
+              <p class="pl-3 pl-lg-5">From sourcing the world’s finest estate-grown Mandeheling coffees in the remote, mist-shrouded volcanic highlands of North Sumatra, and in doing so ensuring that farmers are treated and paid fairly, to helping a three-generation Indian premium cashew processing enterprise grow to the next level while investing to build strong local communities, MarthaMax Corporation is committed to people and planet first through social enterprise trust. Through legacy-building we find great fulfillment and do it well by creating added value in all that we do.</p>
             </div>
           </div>
         </section>
         <!-- end of Header Section -->
 
         <!-- Video Section -->
-        <section class="videoPresentation py-3 py-md-5 d-flex align-items-center justify-content-center">
+        <section class="videoPresentation py-3 py-md-5 d-flex align-items-center justify-content-center scrollspy" id="video">
           <video autoplay muted loop class="w-75">
             <source src="../images/1858464408.mp4" />
               Your browser is not supported
@@ -159,28 +159,28 @@
         </section>
         <!-- end of Video Section -->
 
-        <section class="co-12 col-md-12 bg-secondary mainContents">
+        <section class="co-12 col-md-12 mainContents">
         <!-- Sidebar Section -->
-          <div class="col-3 bg-warning d-none d-md-block mainContents__stickySidebar">
-            <ul class="mb-0">
-              <li><a href="#" class="m-3 d-inline-block">Video</a></li>
-              <li><a href="#" class="m-3 d-inline-block">Valueables</a></li>
-              <li><a href="#" class="m-3 d-inline-block">Top management</a></li>
-              <li><a href="#" class="m-3 d-inline-block">Affiliation</a></li>
+          <div class="col-3 d-none d-md-block mainContents__stickySidebar">
+            <ul class="mb-0 pl-5" id="scrollspy__menu">
+              <li><a href="#" id="scrollTo-video" class="m-3 d-inline-block text-secondary font-weight-bold">Video</a></li>
+              <li><a href="#" id="scrollTo-valuables" class="m-3 d-inline-block text-secondary font-weight-bold">Valueables</a></li>
+              <li><a href="#" id="scrollTo-topManagement" class="m-3 d-inline-block text-secondary font-weight-bold">Top management</a></li>
+              <li><a href="#" id="scrollTo-affiliation" class="m-3 d-inline-block text-secondary font-weight-bold">Affiliation</a></li>
             </ul>
           </div>
         <!-- end of Sidebar Section -->
           
-          <div class="col-12 col-md-8 px-3 px-sm-4 bg-info offset-md-3 mainContents__contents">
-            <section class="valueables py-4 px-3 px-md-5 text-left">
-              <h3>Our Love Story</h3>
+          <div class="col-12 col-md-8 px-3 px-sm-4 offset-md-3 mainContents__contents">
+            <section class="valueables py-4 px-3 px-md-5 text-left scrollspy" id="valuables">
+              <h3 class="mb-lg-4">Our Love Story</h3>
 
               <p>After years of working together, placeholder content starts and continues. We value our reputation that’s why we give only realistic promises; we are not guided by short-term gains and keep transparent records on our activities.</p>
             </section>
 
           <!--Management Section-->
-            <section class="topManagement py-4 px-3 px-sm-4 px-md-5 text-left">
-              <h3>Our People</h3>
+            <section class="topManagement py-4 px-3 px-sm-4 px-md-5 text-left scrollspy" id="topManagement">
+              <h3 class="mb-lg-4">Our People</h3>
 
               <p>We are business experts who happen to be former farmers, ... and ... .Together we embrace challenges, depply care about the work we do and have the confidence to solve just about any problem you put infront of us. Think you've got the chops? Join our team!</p>
 
@@ -232,28 +232,29 @@
           <!--end of Management Section-->
 
           <!-- Affiliate Section -->
-          <section class="affiliates py-5 bg-danger">
-            <h3 class="bg-warning">Affiliation</h3>
+            <section class="affiliates py-5 scrollspy" id="affiliates">
+              <h3 class="pl-3">Affiliation</h3>
 
-            <div class="row py-5 bg-secondary mx-0 text-center">
-              <div class="col-12 col-sm-6">
-                <img src="../images/canadian-chanber11.png" alt="" class="img-fluid">
-              </div>
+              <div class="row py-4 mx-0 text-center">
+                <div class="col-12 col-sm-6">
+                  <img src="../images/canadian-chanber11.png" alt="" class="img-fluid">
+                </div>
 
-              <div class="col-12 col-sm-6">
-                <img src="../images/chartered-institute.png" alt="" class="img-fluid">
-              </div>
+                <div class="col-12 col-sm-6">
+                  <img src="../images/chartered-institute.png" alt="" class="img-fluid">
+                </div>
 
-              <div class="col-12 col-sm-6">
-                <img src="../images/international-trade11.png" alt="" class="img-fluid">
-              </div>
+                <div class="col-12 col-sm-6">
+                  <img src="../images/international-trade11.png" alt="" class="img-fluid">
+                </div>
 
-              <div class="col-12 col-sm-6">
-                <img src="../images/international-chamber11.jpg" alt="" class="img-fluid">
-              </div>
-            </div> 
-          </section>
+                <div class="col-12 col-sm-6">
+                  <img src="../images/international-chamber11.jpg" alt="" class="img-fluid">
+                </div>
+              </div> 
+            </section>
           <!--end of Affiliate Section-->
+
           </div>
         </section>
 
@@ -339,6 +340,10 @@
 
     <!-- Custom JS -->
     <!-- <script src="../js/script.js"></script> -->
+
+    <!--scrollspy-->
+    <script type="text/javascript" src="../js/scrollWatch.js"></script>
+
   </body>
   <script>
     $(document).ready(function () {
@@ -364,15 +369,37 @@
        if(position > 80) {
         $(".navbar-toggler").addClass("scroll");
         $(".logo__menuButton img").addClass("scroll");
+        $(".logo__menuButton").addClass("shadow-sm");
        } else {
         $(".navbar-toggler").removeClass("scroll");
         $(".logo__menuButton img").removeClass("scroll");
+        $(".logo__menuButton").removeClass("shadow-sm");
        }
-      })
+      });
 
       //var otherPagesNav = $(".navbar-toggler")
       var contents = $(".mainContents__stickySidebar").height();
-      $(".mainContents__contents").css("margin-top", -contents)
+      $(".mainContents__contents").css("margin-top", -contents);
+
+      // Scroll to sections
+      $("#scrollTo-video").click(function() {
+        $('html, body').animate({scrollTop: $("#video").offset().top - 63}, 1000);
+      })
+
+      $("#scrollTo-valuables").click(function() {
+        $('html, body').animate({scrollTop: $("#valuables").offset().top - 75}, 1000);
+      })
+
+      $("#scrollTo-topManagement").click(function() {
+        $('html, body').animate({scrollTop: $("#topManagement").offset().top - 75}, 1000);
+      })
+
+      $("#scrollTo-affiliation").click(function() {
+        $('html, body').animate({scrollTop: $("#affiliates").offset().top - 63}, 1000);
+      })
     });
+
+    // Scrollspy
+    $('.scrollspy').scrollWatchMapTo('#scrollspy__menu  li a');
   </script>
 </html>

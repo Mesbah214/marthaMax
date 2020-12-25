@@ -518,10 +518,26 @@ body {
 }
 
 // Maincontents section
+.mainContents__stickySidebar {
+  a {
+    font-family: "Metronic Pro";
+    font-size: 1.7rem;
+  }
+}
+
+#scrollspy__menu {
+  li {
+    a {
+      &.active {
+        color: #000!important;
+      }
+    }
+  }
+}
 .mainContents__contents {
 
   @include respond(md) {
-    border-left: 2px solid red;
+    border-left: $thin_line-black;
   }
 
   h3 {
