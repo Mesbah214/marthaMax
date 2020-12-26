@@ -1,10 +1,12 @@
 // Imported Font
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif!important;
+  font-family: "Open Sans", sans-serif!important;
   font-weight: 400;
   font-size: 1.4rem;
+  line-height: 1.8;
 }
 
 .navigation {
@@ -549,10 +551,6 @@ body {
       font-size: 4rem;
     }
   }
-
-  p {
-    line-height: 1.8;
-  }
 }
 
 .topManagement {
@@ -584,4 +582,46 @@ body {
       color: $color-white;
     }
   }
+}
+
+// Approach Page
+.numbering {
+  font-family: "Metronic Pro";
+  font-size: 1.6rem;
+
+  span {
+    border-left: $thin_line-black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.sub-heading {
+  h4 {
+    font-family: "Metronic Pro";
+    font-weight: 600;
+    font-size: 2.4rem!important;
+  }
+}
+
+.positioning {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+
+  @include respond(md) {
+    font-size: 2.3rem;
+  }
+}
+
+iframe {
+  @include respond(md) {
+    min-width: 96%!important;
+  }
+}
+
+.formFooter-heightMask {
+  max-height: 22px!important;
 }

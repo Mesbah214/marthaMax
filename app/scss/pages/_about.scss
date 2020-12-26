@@ -29,6 +29,12 @@
 			top: 80px;
 		}
 	}
+
+	&--border-top {
+		@include respond(md) {
+			border-top: $thin-line-black;
+		}
+	}
 }
 
 .videoPresentation {
