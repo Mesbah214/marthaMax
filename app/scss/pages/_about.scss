@@ -88,6 +88,18 @@
 			padding-right: 3rem!important;
 			padding-left: 5rem!important;
 		}
+
+		&__approach {
+			@include respond(md) {
+				padding-top: 4rem;
+				padding-right: 0!important;
+			}
+	
+			@include respond(lg) {
+				padding-right: 0!important;
+				padding-left: 0!important;
+			}
+		}
 	}
 }
 
