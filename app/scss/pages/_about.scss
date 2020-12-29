@@ -89,7 +89,7 @@
 			padding-left: 5rem!important;
 		}
 
-		&__approach {
+		&--full {
 			@include respond(md) {
 				padding-top: 4rem;
 				padding-right: 0!important;

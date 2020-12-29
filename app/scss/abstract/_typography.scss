@@ -511,10 +511,11 @@ body {
 
 .companyInfo {
   p {
+    font-size: 1.7rem;
     line-height: 1.8;
 
     @include respond(lg) {
-     font-size: 1.6rem;
+     //font-size: 1.6rem;
     }
   }
 }
@@ -590,7 +591,7 @@ body {
   font-size: 1.6rem;
 
   span {
-    border-left: $thin_line-black;
+    border-left: 1px solid rgba(0, 0, 0, .6);
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
@@ -615,4 +616,15 @@ body {
   @include respond(md) {
     font-size: 2rem;
   }
+}
+
+// Work page
+.title {
+  font-family: "Metronic Pro";
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 15px;
 }
