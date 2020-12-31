@@ -1,0 +1,57 @@
+.times {
+    background-color: $color-blue;
+
+    &__sliderContainer {
+        height: 100%;
+        position: relative;
+        padding: 6rem 0;
+
+        @include respond(lg) {
+            padding: 9rem 0;
+        }
+    }
+
+    &__slider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: $color-white;
+        opacity: 0;
+        z-index: -1;
+
+        &:nth-child(6) {
+            z-index: 1;
+            opacity: 1;
+        }
+    }
+}
+
+.bookkeepingNo,
+.humanResourceDepartment {
+    &__sliderContainer {
+        height: 100%;
+        position: relative;
+        padding: 5rem 0;
+
+        @include respond(lg) {
+            padding: 9rem 0;
+        }
+    }
+
+    &__slider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        opacity: 0;
+        z-index: -1;
+
+        &:nth-child(3) {
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+}

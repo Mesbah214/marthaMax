@@ -84,7 +84,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">blog</a>
+            <a href="blog.html" class="nav-link active">blog</a>
           </li>
 
           <li class="nav-item">
@@ -108,7 +108,7 @@
 
         <div class="col-6 text-right px-0">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler menu-open"
             type="button"
             data-toggle="collapse"
             data-target="#myNav"
@@ -164,10 +164,21 @@
        } else {
         $(".navbar-toggler").removeClass("scroll");
        }
-      })
+      });
+    });
 
-      //var otherPagesNav = $(".navbar-toggler")
+    // Works to place 'close' on the menu button
+    // Select the class
+    var navBtn = document.querySelector(".navbar-toggler");
 
+    navBtn.addEventListener("click", function () {
+      if (navBtn.classList.contains("menu-open")) {
+        this.classList.remove("menu-open");
+        this.textContent = "close";
+      } else {
+        this.classList.add("menu-open");
+        this.textContent = "menu";
+      }
     });
   </script>
 </html>

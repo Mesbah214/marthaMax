@@ -628,3 +628,32 @@ body {
 .card-text {
   font-size: 15px;
 }
+
+// Contact Page
+.times {
+
+  &__slider {
+    
+    span {
+      font-family: "Metronic Pro";
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.sliderText--contact {
+  span {
+    font-family: "Metronic Pro";
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
+}
+
+.corpInfo {
+  span {
+    font-family: "Metronic Pro";
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+}

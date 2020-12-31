@@ -108,7 +108,7 @@
 
         <div class="col-6 text-right px-0">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler menu-open"
             type="button"
             data-toggle="collapse"
             data-target="#myNav"
@@ -368,5 +368,19 @@ and in doing so ensuring that farmers are treated and paid fairly, to helping a 
     // Scrollspy
     $('.scrollspy').scrollWatchMapTo('#scrollspy__menu  li a');
     $(".formFooter").css("display", "none");
+
+    // Works to place 'close' on the menu button
+    // Select the class
+    var navBtn = document.querySelector(".navbar-toggler");
+
+    navBtn.addEventListener("click", function () {
+      if (navBtn.classList.contains("menu-open")) {
+        this.classList.remove("menu-open");
+        this.textContent = "close";
+      } else {
+        this.classList.add("menu-open");
+        this.textContent = "menu";
+      }
+    });
   </script>
 </html>
