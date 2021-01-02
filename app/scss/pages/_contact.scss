@@ -89,9 +89,9 @@
 
 .address {
     overflow: hidden;
+    border-left: $thin_line-black;
 
-    @include respond(md) {
-        border-left: $thin_line-black;
+    @include respond(sm) {
     }
 
     &__sliderContainer {
@@ -100,5 +100,12 @@
 
     &__slider {
         width: 100%;
+    }
+}
+
+.locImg {
+    border-bottom: $thin_line-black;
+    border-top: $thin_line-black;
+    @include respond(sm) {
     }
 }

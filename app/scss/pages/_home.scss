@@ -47,14 +47,14 @@ body {
 
 
 	&--padding {
-		padding-top: 218px;
+		padding-top: 194px;
 
 		@include respond(md) {
-			padding-top: 132.188px;
+			padding-top: 127.188px;
 		}
 
 		@include respond(lg) {
-			padding-top: 163.094px;
+			padding-top: 159.094px;
 		}
 	}
 }

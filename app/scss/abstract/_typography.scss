@@ -6,7 +6,6 @@ body {
   font-family: "Open Sans", sans-serif!important;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1.8;
 }
 
 .navigation {
@@ -538,6 +537,7 @@ body {
   }
 }
 .mainContents__contents {
+  line-height: 1.8;
 
   @include respond(md) {
     border-left: $thin_line-black;
