@@ -5,25 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
 
-    <!-- Ionicons Pack -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
-    ></script>
-
-    <!-- Font MKS-MK3 -->
-    <link rel="stylesheet" href="../css/resources/fonts/ApexMk3/style.css" />
-
-    <!-- Font Metronic -->
-    <link
-      rel="stylesheet"
-      href="../css/resources/fonts/Metronic/stylesheet.css"
-    />
+    <!-- Font Open Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
@@ -31,90 +17,40 @@
     <title>Contact &nbsp;&bull;&nbsp; MarthaMax</title>
 
     <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="../images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta
-      name="msapplication-config"
-      content="../images/favicon/browserconfig.xml"
-    />
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#333333" />
+
   </head>
 
   <body>
     <nav class="navigation fixed-top">
       <div class="collapse" id="myNav">
         <ul class="navbar-nav d-md-flex flex-md-row">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">about</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="approach.html" class="nav-link">approach</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">work</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="blog.html" class="nav-link">blog</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link active">contact</a>
-          </li>
+          <li class="nav-item"><a href="../index.html" class="nav-link">home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+          <li class="nav-item"><a href="approach.html" class="nav-link">approach</a></li>
+          <li class="nav-item"><a href="work.html" class="nav-link">work</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">contact</a></li>
         </ul>
       </div>
 
-      <div
-        class="row px-0 mx-0 d-flex align-items-center logo__menuButton logo__menuButton--white"
-      >
+      <div class="row px-0 mx-0 d-flex align-items-center logo__menuButton logo__menuButton--white">
         <div class="col-6 px-0">
-          <a href="#" class="navbar-brand">
-            <img
-              src="../images/Logo_Capitalize_Dark.png"
-              alt="logo__dark"
-              class=""
-            />
+          <a href="../index.html" class="navbar-brand">
+            <img src="../images/Logo_Capitalize_Dark.png" alt="logo__dark" />
           </a>
         </div>
 
         <div class="col-6 text-right px-0">
-          <button
-            class="navbar-toggler menu-open"
-            type="button"
-            data-toggle="collapse"
-            data-target="#myNav"
-          >
-            menu
-          </button>
+          <button class="navbar-toggler menu-open" type="button" data-toggle="collapse" data-target="#myNav">menu</button>
         </div>
       </div>
     </nav>
@@ -491,16 +427,11 @@
   </body>
   <script>
     $(document).ready(function () {
-      // Get the height of both button row and hidden menu
-      var getHeight = $("#myNav").height();
-
       // Select the menu button
       var button = $(".navbar-toggler");
 
       // Select the container
       var content = $(".main__content");
-
-      //console.log(getHeight);
 
       //Eventlistener;
       button.click(function () {
@@ -510,15 +441,15 @@
       // Reduce the nav height on scroll
       $(window).scroll(function() {
        let position = $(this).scrollTop(); 
-       if(position > 80) {
-        $(".navbar-toggler").addClass("scroll");
-        $(".logo__menuButton img").addClass("scroll");
-        $(".logo__menuButton").addClass("shadow-sm");
-       } else {
-        $(".navbar-toggler").removeClass("scroll");
-        $(".logo__menuButton img").removeClass("scroll");
-        $(".logo__menuButton").removeClass("shadow-sm");
-       }
+        if(position > 80) {
+          $(".navbar-toggler").addClass("scroll");
+          $(".logo__menuButton img").addClass("scroll");
+          $(".logo__menuButton").addClass("shadow-sm");
+        } else {
+          $(".navbar-toggler").removeClass("scroll");
+          $(".logo__menuButton img").removeClass("scroll");
+          $(".logo__menuButton").removeClass("shadow-sm");
+        }
       });
 
       //var otherPagesNav = $(".navbar-toggler")
