@@ -1,6 +1,47 @@
-// Imported Font
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
+// Custom Fonts
+@font-face {
+  font-family: "MKSMK3";
+  src: url("resources/fonts/ApexMk3/Apex\ Mk3-Medium.ttf");
+  src: url("resources/fonts/ApexMk3/Apex\ Mk3-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('resources/fonts/Metronic/MetronicPro-SemiBold.eot');
+    src: local('resources/fonts/Metronic/Metronic Pro SemiBold'), local('resources/fonts/Metronic/MetronicPro-SemiBold'),
+        url('resources/fonts/Metronic/MetronicPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('resources/fonts/Metronic/MetronicPro-SemiBold.woff2') format('woff2'),
+        url('resources/fonts/Metronic/MetronicPro-SemiBold.woff') format('woff'),
+        url('resources/fonts/Metronic/MetronicPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('resources/fonts/Metronic/MetronicPro-Bold.eot');
+    src: local('resources/fonts/Metronic/Metronic Pro Bold'), local('resources/fonts/Metronic/MetronicPro-Bold'),
+        url('resources/fonts/Metronic/MetronicPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('resources/fonts/Metronic/MetronicPro-Bold.woff2') format('woff2'),
+        url('resources/fonts/Metronic/MetronicPro-Bold.woff') format('woff'),
+        url('resources/fonts/Metronic/MetronicPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('resources/fonts/Metronic/MetronicPro.eot');
+    src: local('resources/fonts/Metronic/Metronic Pro'), local('resources/fonts/Metronic/MetronicPro'),
+        url('resources/fonts/Metronic/MetronicPro.eot?#iefix') format('embedded-opentype'),
+        url('resources/fonts/Metronic/MetronicPro.woff2') format('woff2'),
+        url('resources/fonts/Metronic/MetronicPro.woff') format('woff'),
+        url('resources/fonts/Metronic/MetronicPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
   font-family: "Open Sans", sans-serif!important;
