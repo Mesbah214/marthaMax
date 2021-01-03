@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-SemiBold.eot');
+    src: local('Metronic Pro SemiBold'), local('MetronicPro-SemiBold'),
+        url('MetronicPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-SemiBold.woff2') format('woff2'),
+        url('MetronicPro-SemiBold.woff') format('woff'),
+        url('MetronicPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro Air';
+    src: url('MetronicPro-Thin.eot');
+    src: local('Metronic Pro Thin'), local('MetronicPro-Thin'),
+        url('MetronicPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-Thin.woff2') format('woff2'),
+        url('MetronicPro-Thin.woff') format('woff'),
+        url('MetronicPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-LightItalic.eot');
+    src: local('Metronic Pro Light Italic'), local('MetronicPro-LightItalic'),
+        url('MetronicPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-LightItalic.woff2') format('woff2'),
+        url('MetronicPro-LightItalic.woff') format('woff'),
+        url('MetronicPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro Air';
+    src: url('MetronicPro-ThinItalic.eot');
+    src: local('Metronic Pro Thin Italic'), local('MetronicPro-ThinItalic'),
+        url('MetronicPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-ThinItalic.woff2') format('woff2'),
+        url('MetronicPro-ThinItalic.woff') format('woff'),
+        url('MetronicPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-Bold.eot');
+    src: local('Metronic Pro Bold'), local('MetronicPro-Bold'),
+        url('MetronicPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-Bold.woff2') format('woff2'),
+        url('MetronicPro-Bold.woff') format('woff'),
+        url('MetronicPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-Black.eot');
+    src: local('Metronic Pro Black'), local('MetronicPro-Black'),
+        url('MetronicPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-Black.woff2') format('woff2'),
+        url('MetronicPro-Black.woff') format('woff'),
+        url('MetronicPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-Light.eot');
+    src: local('Metronic Pro Light'), local('MetronicPro-Light'),
+        url('MetronicPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-Light.woff2') format('woff2'),
+        url('MetronicPro-Light.woff') format('woff'),
+        url('MetronicPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-SemiBoldItalic.eot');
+    src: local('Metronic Pro SemiBold Italic'), local('MetronicPro-SemiBoldItalic'),
+        url('MetronicPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-SemiBoldItalic.woff2') format('woff2'),
+        url('MetronicPro-SemiBoldItalic.woff') format('woff'),
+        url('MetronicPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-BlackItalic.eot');
+    src: local('Metronic Pro Black Italic'), local('MetronicPro-BlackItalic'),
+        url('MetronicPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-BlackItalic.woff2') format('woff2'),
+        url('MetronicPro-BlackItalic.woff') format('woff'),
+        url('MetronicPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-BoldItalic.eot');
+    src: local('Metronic Pro Bold Italic'), local('MetronicPro-BoldItalic'),
+        url('MetronicPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-BoldItalic.woff2') format('woff2'),
+        url('MetronicPro-BoldItalic.woff') format('woff'),
+        url('MetronicPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro-Italic.eot');
+    src: local('Metronic Pro Italic'), local('MetronicPro-Italic'),
+        url('MetronicPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro-Italic.woff2') format('woff2'),
+        url('MetronicPro-Italic.woff') format('woff'),
+        url('MetronicPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metronic Pro';
+    src: url('MetronicPro.eot');
+    src: local('Metronic Pro'), local('MetronicPro'),
+        url('MetronicPro.eot?#iefix') format('embedded-opentype'),
+        url('MetronicPro.woff2') format('woff2'),
+        url('MetronicPro.woff') format('woff'),
+        url('MetronicPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

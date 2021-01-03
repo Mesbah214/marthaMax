@@ -4,5 +4,4 @@ dist/css/*.css
 dist/js/*.js
 app/images
 dist/images/favicon
-dist/css/resources/fonts
 gulpfile.js

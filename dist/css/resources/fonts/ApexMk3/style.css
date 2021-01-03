@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "MKSMK3";
+  src: url(./Apex\ Mk3-ExtraLight.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MKSMK3";
+  src: url(./Apex\ Mk3-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
