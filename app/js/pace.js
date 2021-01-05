@@ -1117,17 +1117,6 @@ Pace.on("done", function () {
       $.bez([0.19, 1, 0.22, 1])
     );
 
-  // $("#preloader p")
-  //   .delay(500)
-  //   .animate(
-  //     {
-  //       top: "30%",
-  //       opacity: "0",
-  //     },
-  //     3000,
-  //     $.bez([0.19, 1, 0.22, 1])
-  //   );
-
   $("#preloader")
     .delay(1500)
     .animate(

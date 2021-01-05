@@ -13,7 +13,7 @@
   border-radius: 3px;
   height: 2px;
   overflow: hidden;
-  background: $color-lightGrey;
+  background: #1b1b1b;
 
   @include respond(md) {
     display: block;
@@ -59,17 +59,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 12%;
-  }
-
-  p {
-    font-family: "Metronic Pro";
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $color-lightGrey;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
