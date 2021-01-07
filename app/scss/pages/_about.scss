@@ -106,6 +106,20 @@
 				padding-left: 0!important;
 			}
 		}
+
+		&--blog {
+			padding-top: 0;
+
+			@include respond(md) {
+				//padding-top: 4rem;
+				padding-right: 0!important;
+			}
+	
+			@include respond(lg) {
+				padding-right: 0!important;
+				padding-left: 0!important;
+			}
+		}
 	}
 }
 

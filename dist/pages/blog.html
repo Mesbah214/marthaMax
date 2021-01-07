@@ -9,7 +9,7 @@
 
     <!-- Font Open Sans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
@@ -26,6 +26,7 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="msapplication-config" content="../images/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#333333" />
+
   </head>
 
   <body>
@@ -55,102 +56,214 @@
     </nav>
 
     <div class="main__content">
-      <section class="header d-flex justify-content-center align-items-center vh-100">
-        <h1 class="display-1">Be Available Soon :)</h1>
-      </section>
-    </div>
-
-    <!--General Footer-->
-    <section class="generalFooter pt-5 pt-md-0">
-      <div class="col-12 col-md-12">
-        <div class="row mx-0 text-center">
-
-          <!--footerBrandlogo and credit-->
-          <div class="col-12 col-md-3 d-flex flex-column justify-content-between px-0">
-            <picture class="h-50 my-3 my-md-0 d-flex align-items-center justify-content-center">
-              <img src="../images/Logo_Capitalize_Light.png" alt="" class="px-2">
-            </picture>
-
-            <p class="credit text-light my-3 my-md-0 px-2 h-50 d-flex align-items-center justify-content-center">
-              Designed by MarthaMax IT Team
-            </p>
-          </div>
-          <!--end of footerBrandlogo and credit-->
-
-          <div class="col-12 col-md-9 links px-0">
-            <div class="row mx-0 pt-md-5">
-              <div class="col-12 col-md-6 px-0">
-                <div class="row mx-0">
-
-                  <!--Footer Nav link-->
-                  <div class="col-6">
-                    <ul class="list-unstyled ml-md-5 pt-2">
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="../index.html">Main</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="about.html">About</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="approach.html">Approach</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="career.html">Career</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="col-6">
-                    <ul class="list-unstyled ml-md-5 pt-2">
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="../index.html">Blog</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="about.html">News</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="approach.html">Privacy</a></li>
-                      <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="career.html">Contact</a></li>
-                    </ul>
-                  </div>
-                  <!--end of Footer Nav link-->
-                </div>
-              </div>
-              
-              <!--Contact infos and presentation part-->
-              <div class="col-12 col-md-6 px-0 contacts">
-                <h4 class="text-light text-md-left py-4 my-2 pl-2 mb-3 mb-md-5">+ 1 647 864 9887<span class="text-muted font-weight-bold text-small">CANADA OFFICE</span></h4>
-
-                <a class="btn" href="#">Download presentation&#8212;soon</a>
-              </div>
-              <!--end 0f Contact infos and presentation part-->
-
-            </div>
-
-            <!--Copyright text-->
-            <div class="row mx-0 footer-row py-2">
-              <div class="col-12 col-md-8 my-2 my-md-5">
-                <p class="text-muted mb-0">&#169; 2020 MarthaMax Corporation. All rights reserved.</p>
-              </div>
-
-              <div class="col-12 col-md-4 my-2 my-md-5">
-                <a class="text-decoration-none text-muted" href="#">Policy</a>
-              </div>
-            </div>
-            
-            <!--end of Copyright text-->
+      
+      <!-- Header Section -->
+      <section class="generalHeader col-12 col-md-11 pr-md-5 mr-lg-5">
+        <div class="row mx-0">
+          <div class="col px-4 px-md-5">
+            <h1 class="display-2 mb-0 px-md-5 general general--Header">Blog</h1>
           </div>
         </div>
-      </div>
-    </section>
-    <!--end of General Footer-->
+      </section>
+      <!-- end of Header Section -->
+
+      <section class="co-12 col-md-12 mainContents mainContents--border-top">
+      <!-- Sidebar Section -->
+        <div class="col-3 d-none d-md-block mainContents__stickySidebar">
+          <ul class="mb-0 pl-5" id="scrollspy__menu">
+            <li><a href="#" id="scrollTo-posts" class="m-3 d-inline-block text-secondary font-weight-bold">Posts</a></li>
+            <li><a href="#" id="scrollTo-contact" class="m-3 d-inline-block text-secondary font-weight-bold">Contact Us</a></li>
+          </ul>
+        </div>
+      <!-- end of Sidebar Section -->
+        
+      <!--Posts Section-->
+        <div class="col-12 col-md-9 offset-md-3 mainContents__contents mainContents__contents--blog">
+          <section class="py-3 text-left scrollspy" id="posts">
+            <!-- post 1 -->
+            <div class="row mx-0 px-0 pb-5 py-lg-5 pl-lg-5 bottom__line">
+              <div class="col-lg-2 p-4 p-lg-0">
+                <img src="../images/draw.png" class="ml-sm-4 ml-lg-0 posts-icon" alt="">
+              </div>
+
+              <div class="col-md-10 col-lg-8 d-sm-flex px-4 pt-lg-5 pb-md-5">
+                <div class="col-sm-3 pl-sm-4 date text-md-right pr-md-3">
+                  <!-- Date of the post -->
+                  <p class="d-inline-block">July 3<span class="text-muted"><br/>2020</span></p>
+                </div>
+
+                <div class="col-sm-9 sub-heading">
+                  <!-- Headline of the post -->
+                  <h4 class="mt-3 my-sm-0">Business Sustainability 2020: What You Need to Know to Succeed in the New Now</h4>
+
+                  <a href="#" class="mt-3 d-inline-block post-link">Read the full article</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 2 -->
+            <div class="row mx-0 px-0 pb-5 py-lg-5 pl-lg-5 bottom__line">
+              <div class="col-lg-2 p-4 p-lg-0">
+                <img src="../images/draw.png" class="ml-sm-4 ml-lg-0 posts-icon" alt="">
+              </div>
+
+              <div class="col-md-10 col-lg-8 d-sm-flex px-4 pt-lg-5 pb-md-5">
+                <div class="col-sm-3 pl-sm-4 date text-md-right pr-md-3">
+                  <!-- Date of the post -->
+                  <p class="d-inline-block">July 3<span class="text-muted"><br/>2020</span></p>
+                </div>
+
+                <div class="col-sm-9 sub-heading">
+                  <!-- Headline of the post -->
+                  <h4 class="mt-3 my-sm-0">Business Sustainability 2020: What You Need to Know to Succeed in the New Now</h4>
+
+                  <a href="#" class="mt-3 d-inline-block post-link">Read the full article</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- post 3 -->
+            <div class="row mx-0 px-0 pb-5 py-lg-5 pl-lg-5 bottom__line">
+              <div class="col-lg-2 p-4 p-lg-0">
+                <img src="../images/draw.png" class="ml-sm-4 ml-lg-0 posts-icon" alt="">
+              </div>
+
+              <div class="col-md-10 col-lg-8 d-sm-flex px-4 pt-lg-5 pb-md-5">
+                <div class="col-sm-3 pl-sm-4 date text-md-right pr-md-3">
+                  <!-- Date of the post -->
+                  <p class="d-inline-block">July 3<span class="text-muted"><br/>2020</span></p>
+                </div>
+
+                <div class="col-sm-9 sub-heading">
+                  <!-- Headline of the post -->
+                  <h4 class="mt-3 my-sm-0">Business Sustainability 2020: What You Need to Know to Succeed in the New Now</h4>
+
+                  <a href="#" class="mt-3 d-inline-block post-link">Read the full article</a>
+                </div>
+              </div>
+            </div>
+
+            <!--Company positioning texts-->
+            <div class="row mx-0 p-3 mt-4 p-sm-4 p-md-5">
+              <div class="col-12 col-md-10 p-lg-2"> 
+                <h4 class="positioning text-center">
+                  <p><em>Through purposeful policies, thoughtful programs and innovative community activities we make meaningful impact and fulfill the deepest value held within MarthaMax, to create legacy through social purpose.</em></p>
+                </h4>
+              </div>
+            </div>
+            <!--end of Company positioning texts-->
+          </section>
+      <!--end of Posts Section-->
+
+        <!-- Contact Us Section -->
+        <div class="row mx-0">
+          <div class="col-12 col-md-10 px-0">
+            <section class="py-5 scrollspy px-4 px-md-5" id="contactUs">
+              <h3>Contact Us</h3>
+
+              <div class="row py-3 text-left">
+                <p>Are you ready to reimagine, redesign and reinvent the future of your brand?</p>
+              </div> 
+              
+              <script type="text/javascript" src="https://form.jotform.com/jsform/201596812629260"></script>
+            </section>
+          </div>
+        </div>
+        <!--end of Contact Us Section-->
+
+        </div>
+      </section>
+
+      <!--General Footer-->
+      <section class="generalFooter pt-5 pt-md-0">
+        <div class="col-12 col-md-12">
+          <div class="row mx-0 text-center">
+
+            <!--footerBrandlogo and credit-->
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-between px-0">
+              <picture class="h-50 my-3 my-md-0 d-flex align-items-center justify-content-center">
+                <img src="../images/Logo_Capitalize_Light.png" alt="" class="px-2">
+              </picture>
+
+              <p class="credit text-light my-3 my-md-0 px-2 h-50 d-flex align-items-center justify-content-center">
+                Designed by MarthaMax IT Team
+              </p>
+            </div>
+            <!--end of footerBrandlogo and credit-->
+
+            <div class="col-12 col-md-9 links px-0">
+              <div class="row mx-0 pt-md-5">
+                <div class="col-12 col-md-6 px-0">
+                  <div class="row mx-0">
+
+                    <!--Footer Nav link-->
+                    <div class="col-6">
+                      <ul class="list-unstyled ml-md-5 pt-2">
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="../index.html">Main</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="about.html">About</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="approach.html">Approach</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="#">Career</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-6">
+                      <ul class="list-unstyled ml-md-5 pt-2">
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="blog.html">Blog</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="#">News</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="#">Privacy</a></li>
+                        <li class="text-center text-md-left py-2 my-2 "><a class="text-light font-weight-bold" href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                    <!--end of Footer Nav link-->
+                  </div>
+                </div>
+                
+                <!--Contact infos and presentation part-->
+                <div class="col-12 col-md-6 px-0 contacts">
+                  <h4 class="text-light text-md-left py-4 my-2 pl-2 mb-3 mb-md-5">+ 1 647 864 9887<span class="text-muted font-weight-bold text-small">CANADA OFFICE</span></h4>
+
+                  <a class="btn" href="#">Download presentation&#8212;soon</a>
+                </div>
+                <!--end 0f Contact infos and presentation part-->
+
+              </div>
+
+              <!--Copyright text-->
+              <div class="row mx-0 footer-row py-2">
+                <div class="col-12 col-md-8 my-2 my-md-5">
+                  <p class="text-muted mb-0">&#169; 2020 MarthaMax Corporation. All rights reserved.</p>
+                </div>
+
+                <div class="col-12 col-md-4 my-2 my-md-5">
+                  <a class="text-decoration-none text-muted" href="#">Policy</a>
+                </div>
+              </div>
+
+              <!--end of Copyright text-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end 0f General Footer-->
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQurey CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="../js/script.js"></script>
+    <!--scrollspy-->
+    <script type="text/javascript" src="../js/scrollWatch.js"></script>
+
   </body>
   <script>
     $(document).ready(function () {
-      // Get the height of both button row and hidden menu
-      var getHeight = $("#myNav").height();
-
       // Select the menu button
       var button = $(".navbar-toggler");
 
       // Select the container
       var content = $(".main__content");
-
-      //console.log(getHeight);
 
       //Eventlistener;
       button.click(function () {
@@ -159,18 +272,35 @@
 
       // Reduce the nav height on scroll
       $(window).scroll(function() {
-       let position = $(this).scrollTop(); 
-       if(position > 80) {
+        let position = $(this).scrollTop(); 
+        if(position > 80) {
           $(".navbar-toggler").addClass("scroll");
           $(".logo__menuButton img").addClass("scroll");
           $(".logo__menuButton").addClass("shadow-sm");
-       } else {
+        } else {
           $(".navbar-toggler").removeClass("scroll");
           $(".logo__menuButton img").removeClass("scroll");
           $(".logo__menuButton").removeClass("shadow-sm");
-       }
+        }
+      });
+
+      //var otherPagesNav = $(".navbar-toggler")
+      var contents = $(".mainContents__stickySidebar").height();
+      $(".mainContents__contents").css("margin-top", -contents);
+
+      // Scroll to sections
+      $("#scrollTo-posts").click(function() {
+        $('html, body').animate({scrollTop: $("#posts").offset().top - 75}, 1000);
+      });
+
+      $("#scrollTo-contact").click(function() {
+        $('html, body').animate({scrollTop: $("#contactUs").offset().top - 70}, 1000);
       });
     });
+
+    // Scrollspy
+    $('.scrollspy').scrollWatchMapTo('#scrollspy__menu  li a');
+    $(".formFooter").css("display", "none");
 
     // Works to place 'close' on the menu button
     // Select the class

@@ -1,0 +1,27 @@
+.posts-icon {
+  max-width: 100px;
+
+  @include respond(lg) {
+    max-width: 100%;
+  }
+}
+
+.date {
+  font-size: 1.6rem;
+
+  p {
+    br {
+      display: none;
+
+      @include respond(md) {
+        display: block;
+      }
+    }
+  }
+
+  span {
+    padding: .1rem 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid rgba(0, 0, 0, .3);
+  }
+}
