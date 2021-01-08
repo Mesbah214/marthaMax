@@ -20,6 +20,14 @@
 			padding: 4rem;
 		}
 	}
+
+	&--post {
+		padding-top: 4.5rem;
+
+		@include respond(md) {
+			padding-top: 6.5rem;
+		}
+	}
 }
 
 .mainContents {
