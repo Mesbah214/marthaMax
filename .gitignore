@@ -1,7 +1,2 @@
 node_modules/
-*.json
-dist/css/*.css
-dist/js/*.js
-app/images
-dist/images/favicon
-gulpfile.js
+package-lock.json
