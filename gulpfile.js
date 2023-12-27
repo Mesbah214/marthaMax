@@ -68,3 +68,5 @@ exports.default = series(
   browsersyncServe,
   watchTask
 );
+
+exports.build = series(imageMin, scssTask, jsTask)
