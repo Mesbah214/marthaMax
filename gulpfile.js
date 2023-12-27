@@ -1,5 +1,5 @@
 const { src, dest, watch, series } = require("gulp");
-const sass = require("gulp-sass")(require('sass'));
+const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require("autoprefixer");
 const postcss = require("gulp-postcss");
 const cssnano = require("cssnano");
@@ -69,4 +69,4 @@ exports.default = series(
   watchTask
 );
 
-exports.build = series(imageMin, scssTask, jsTask)
+exports.build = series(imageMin, scssTask, jsTask);
