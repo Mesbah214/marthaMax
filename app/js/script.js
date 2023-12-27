@@ -9,7 +9,7 @@ Slide Navigation
 window.addEventListener("load", function () {
   if (window.innerWidth > 767) {
     // Make array of sections
-    var sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".fullpage");
 
     // Select container that contains all the slides
     var content = document.querySelector(".main__content");
