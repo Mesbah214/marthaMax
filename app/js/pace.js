@@ -1096,13 +1096,15 @@
       Pace.start();
     }
   }
-}.call(this));
+}).call(this);
 
 //Javascript section
 paceOptions = {
   ajax: true,
   document: true,
   eventLag: false,
+  // Only show the progress on regular and ajax-y page navigation, not every request
+  restartOnRequestAfter: false,
 };
 
 Pace.on("done", function () {
